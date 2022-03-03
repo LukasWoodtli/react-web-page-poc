@@ -5,6 +5,10 @@ import image from './img/alexandre-debieve-FO7JIlwjOtU-unsplash.jpg';
 
 
 function MainPage() {
+    const indexText = 'I am a passionate Firmware and Software Engineer with a special focus on quality. ' +
+        'My experience range from small electromechanical devices to large scale enterprise applications. ' +
+        'With a background as mechanic as well as electronic and software engineering I developed a ' +
+        'problem-solving engineering mindset that helps me to find exceptional solutions for a big range of projects.'
     return <>
         <Box
             component="main"
@@ -47,7 +51,7 @@ function MainPage() {
                             />
                             <CardContent>
                                 <Typography align="left">
-                                    Lorem ipsum
+                                    {indexText}
                                 </Typography>
                             </CardContent>
                         </Card>
