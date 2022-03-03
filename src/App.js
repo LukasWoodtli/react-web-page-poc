@@ -1,4 +1,5 @@
 import React from "react";
+import {Route} from 'react-router-dom';
 import MenuBar from "./MenuBar";
 import MainPage from './pages/MainPage';
 
@@ -10,7 +11,12 @@ function App() {
             <header>
                 <MenuBar/>
             </header>
-            <MainPage/>
+            <Route path='/index'>
+                <MainPage/>
+            </Route>
+            <Route path='/hello'>
+                <h1>Hello</h1>
+            </Route>
             <Footer/>
         </div>
     );
