@@ -15,6 +15,8 @@ const icons = [
 
 function Footer() {
     return (
+        <>
+        <div style={{flex: "1 0 auto"}}/>  {/* spacer */}
         <div style={{display: "flex"}}>
             <ButtonGroup variant="outlined"
                          aria-label="social media links"
@@ -27,6 +29,7 @@ function Footer() {
                     </IconButton>))}
             </ButtonGroup>
         </div>
+        </>
     );
 }
 

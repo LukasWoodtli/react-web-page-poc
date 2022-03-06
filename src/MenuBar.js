@@ -6,6 +6,7 @@ import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import {createTheme, Slide, styled, ThemeProvider, useScrollTrigger} from "@mui/material";
 import PropTypes from 'prop-types';
+import {Link} from "react-router-dom";
 
 const Offset = styled('div')(({theme}) => theme.mixins.toolbar);
 
@@ -18,7 +19,7 @@ const menuButtonTheme = createTheme({
     }
 });
 
-const pages = ['Home', 'Resume', 'Skills', 'Books', 'Courses', 'Projects', 'Blog', 'Contact'];
+const pages = ['Resume', 'Skills', 'Books', 'Courses', 'Projects', 'Blog', 'Contact'];
 
 function HideOnScroll(props) {
     const {children} = props;
@@ -44,21 +45,25 @@ const MenuBar = () => {
                         <Toolbar disableGutters
                                  sx={{justifyContent: "space-between"}}>
                             <ThemeProvider theme={menuButtonTheme}>
-                                <Button
-                                    key="Lukas Woodtli"
-                                    sx={{color: 'white'}}
-                                >
-                                    Lukas Woodtli
-                                </Button>
+                                <Link to="/">
+                                    <Button
+                                        key="Lukas Woodtli"
+                                        sx={{color: 'white'}}
+                                    >
+                                        Lukas Woodtli
+                                    </Button>
+                                </Link>
                                 <div/>
                                 <Box>
                                     {pages.map((page) => (
-                                        <Button
-                                            key={page}
-                                            sx={{color: 'white'}}
-                                        >
-                                            {page}
-                                        </Button>
+                                        <Link to={"/page/" + page}>
+                                            <Button
+                                                key={page}
+                                                sx={{color: 'white'}}
+                                            >
+                                                {page}
+                                            </Button>
+                                        </Link>
                                     ))}
                                 </Box>
                             </ThemeProvider>
