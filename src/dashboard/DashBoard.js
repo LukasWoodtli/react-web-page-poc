@@ -73,7 +73,6 @@ const Dashboard = () => {
                 flexDirection="row"
                 justifyContent="flex-start"
                 alignItems="stretch"
-
                 component="main"
                 sx={{
                     flexGrow: 1,
@@ -107,7 +106,7 @@ const Dashboard = () => {
                                     </Typography>
                                 }/>
                             <CardContent>
-                                <Typography align="left">
+                                <Typography variant="span" align="left">
                                     {card.text}
                                 </Typography>
                             </CardContent>

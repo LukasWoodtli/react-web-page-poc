@@ -56,9 +56,10 @@ const MenuBar = () => {
                                 <div/>
                                 <Box>
                                     {pages.map((page) => (
-                                        <Link to={"/page/" + page}>
+                                        <Link to={"/page/" + page}
+                                              key={page + "_link"}>
                                             <Button
-                                                key={page}
+                                                key={page + "_button"}
                                                 sx={{color: 'white'}}
                                             >
                                                 {page}
