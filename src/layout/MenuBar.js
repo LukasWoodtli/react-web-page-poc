@@ -38,7 +38,7 @@ HideOnScroll.propTypes = {
 const MenuBar = () => {
 
     return (
-        <React.Fragment>
+        <header>
             <HideOnScroll>
                 <AppBar>
                     <Container maxWidth="xl">
@@ -72,7 +72,7 @@ const MenuBar = () => {
                 </AppBar>
             </HideOnScroll>
             <Offset/>
-        </React.Fragment>
+        </header>
     );
 };
 export default MenuBar;

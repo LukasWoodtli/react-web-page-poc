@@ -13,11 +13,9 @@ const icons = [
     {icon: faEnvelope, link: 'mailto:woodtli.lukas@gmail.com'}
 ];
 
-function Footer() {
+function Footer(props) {
     return (
-        <>
-        <div style={{flex: "1 0 auto"}}/>  {/* spacer */}
-        <div style={{display: "flex"}}>
+        <div style={props.style}>
             <ButtonGroup variant="outlined"
                          aria-label="social media links"
                          sx={{marginLeft: "auto", mr: 5}}>
@@ -29,9 +27,7 @@ function Footer() {
                     </IconButton>))}
             </ButtonGroup>
         </div>
-        </>
     );
 }
-
 
 export default Footer;
