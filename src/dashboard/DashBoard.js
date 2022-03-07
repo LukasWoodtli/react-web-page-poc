@@ -62,13 +62,6 @@ const Dashboard = () => {
                 container
                 spacing={3}
                 item
-                colums={{
-                    xs: 1,
-                    sm: 1,
-                    md: 2,
-                    lg: 3,
-                    xl: 6
-                }}
                 direction="row"
                 flexDirection="row"
                 justifyContent="flex-start"
@@ -91,13 +84,7 @@ const Dashboard = () => {
                         display="flex"
                         key={card.title}
                     >
-                        <Card
-                            xs={12}
-                            sm={6}
-                            md={4}
-                            lg={4}
-                            xl={2}
-                        >
+                        <Card>
                             <CardHeader
                                 avatar={card.avatar}
                                 title={
@@ -106,7 +93,7 @@ const Dashboard = () => {
                                     </Typography>
                                 }/>
                             <CardContent>
-                                <Typography variant="span" align="left">
+                                <Typography variant="caption" align="left">
                                     {card.text}
                                 </Typography>
                             </CardContent>
