@@ -21,7 +21,7 @@ const menuButtonTheme = createTheme({
 
 const pages = ['Resume', 'Skills', 'Books', 'Courses', 'Projects', 'Blog', 'Contact'];
 
-function HideOnScroll(props) {
+function HideOnScroll(props: any) {
     const {children} = props;
     return (
         <Slide appear={false} direction="down" in={!useScrollTrigger()}>

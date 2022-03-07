@@ -1,7 +1,8 @@
+import React from "react";
 import {Box, Card, CardContent, CardHeader, Container, Grid, Typography} from "@mui/material";
 import DashBoard from "../dashboard/DashBoard";
-import React from "react";
-import image from './img/alexandre-debieve-FO7JIlwjOtU-unsplash.jpg';
+
+const image = require('./img/alexandre-debieve-FO7JIlwjOtU-unsplash.jpg');
 
 
 function MainPage() {
@@ -23,13 +24,6 @@ function MainPage() {
                     container
                     spacing={3}
                     item
-                    colums={{
-                        xs: 1,
-                        sm: 1,
-                        md: 2,
-                        lg: 2,
-                        xl: 2
-                    }}
                     direction="row"
                     justifyContent="flex-start"
                     alignItems="stretch"

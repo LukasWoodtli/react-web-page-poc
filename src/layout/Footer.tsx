@@ -13,7 +13,11 @@ const icons = [
     {icon: faEnvelope, link: 'mailto:woodtli.lukas@gmail.com'}
 ];
 
-function Footer(props) {
+interface FooterProps {
+    style: any;
+}
+
+function Footer(props: FooterProps) {
     return (
         <div style={props.style}>
             <ButtonGroup variant="outlined"

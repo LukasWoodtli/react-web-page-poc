@@ -16,4 +16,3 @@ export function PageContent() {
     );
 }
 
-export default PageContent;
