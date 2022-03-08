@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/react-web-page-poc/static/css/main.e6c13ad2.css",
+    "main.js": "/react-web-page-poc/static/js/main.6cfd379e.js",
+    "static/js/787.cab27077.chunk.js": "/react-web-page-poc/static/js/787.cab27077.chunk.js",
+    "static/media/alexandre-debieve-FO7JIlwjOtU-unsplash.jpg": "/react-web-page-poc/static/media/alexandre-debieve-FO7JIlwjOtU-unsplash.7d7f9eacd2996d68ab36.jpg",
+    "index.html": "/react-web-page-poc/index.html",
+    "main.e6c13ad2.css.map": "/react-web-page-poc/static/css/main.e6c13ad2.css.map",
+    "main.6cfd379e.js.map": "/react-web-page-poc/static/js/main.6cfd379e.js.map",
+    "787.cab27077.chunk.js.map": "/react-web-page-poc/static/js/787.cab27077.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.6cfd379e.js"
+  ]
+}
