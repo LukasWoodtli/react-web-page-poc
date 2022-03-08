@@ -1,5 +1,6 @@
 {
-  "name": "web-page",
+  "name": "react-web-page-poc",
+  "homepage": "https://lukaswoodtli.github.io/react-web-page-poc",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
