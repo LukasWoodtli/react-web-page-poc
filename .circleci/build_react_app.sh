@@ -14,14 +14,12 @@ pwd
 
 echo "Building Web Page"
 
-npm install -g
-npm install
-
+npm ci
 
 npm run build
 
-mv build/ docs/
 
+mv build/ docs/
 
 cp "docs/index.html" "docs/404.html"
 touch docs/.nojekyll
